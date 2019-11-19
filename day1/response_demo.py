@@ -19,7 +19,7 @@ class JSONResponse(Response):
         if isinstance(response,dict):
             # jsonify()：将字典对象转化为json字符串，Content-Type: application
             # json：json.dumps()将字典对象转化为json字符串 , Content-Type: text/html
-            # jsonify()除了将字典转化成json对象，还将对象包装成了一个Response对象
+            # jsonify()除了将字典转化成json对象，还将对象包装成了一个Response对象.
             response = jsonify(response)
         elif isinstance(response,list):
             response = str(response)
