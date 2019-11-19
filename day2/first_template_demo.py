@@ -13,4 +13,4 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    app.run(debug=True) # flask自带的测试应用服务器
+    app.run(debug=True)
